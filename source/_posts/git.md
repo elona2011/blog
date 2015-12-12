@@ -33,7 +33,13 @@ git push origin master
 最好先设置好ssh key, 并在github中创建一个新仓库, 复制SSH地址, 下面是本地操作
 ``cd blog`` 进入要git的目录下
 ``git init`` 创建初始版本库
-``git add .`` 将当前目录及子目录的所有文件添加到版本库
+``git add .`` 将当前目录及子目录的所有文件添加到暂存区
+``git commit -m 'init repo'`` 提交暂存区到仓库区
 ``git status`` 查看暂存区
 ``git remote add origin git@github.com:elona2011/blog.git`` 添加远程库地址
 ``git push -u origin master`` 推送本地内容, -u是关联分支, 以后直接用``git push``即可
+
+## 之后git
+``git add .``
+``git commit -m 'xxx comment'``
+``git push``
