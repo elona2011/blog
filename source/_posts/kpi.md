@@ -1,8 +1,10 @@
-title: kpi
+title: KPI
 date: 2015-12-11 22:39:56
 tags:
   - js
   - gulp
+categories:
+  - js
 ---
 
 # 雪碧图

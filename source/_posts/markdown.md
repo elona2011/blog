@@ -2,6 +2,8 @@ title: markdown笔记
 tags:
   - md
 date: 2015-04-24 21:39:19
+categories:
+      - blog
 ---
 
 # <font color=red>内联样式</font>

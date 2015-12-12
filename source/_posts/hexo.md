@@ -2,6 +2,8 @@ title: 使用hexo布置blog
 date: 2014-11-08 17:53:31
 tags: 
     - hexo
+categories:
+      - blog
 ---
 
 
