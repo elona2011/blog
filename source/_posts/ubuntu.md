@@ -43,7 +43,43 @@ sudo apt-get install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 ```
 
-# 安装jekyll
+# java安装
+先从Oracle官网下载JDK
+装JDK解压至``/usr/lib/jvm``
+配置环境变量命令
+```
+$sudo gedit ~/.bashrc
+添加以下代码：
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_79   
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH
+
+激活配置
+source ~/.bashrc
+
+测试
+java -version
+javac -version
+```
+
+# android环境安装
+下载Android Studio
+解压后进入android-studio/bin/
+运行./studio.sh
+
+报错:
+```
+Failed to get the adb version: Cannot run program "adb": error=2, 没有那个文件或目录
+```
+原因:由于是64bit的系统，而Android sdk只有32bit的程序，需要安装lib32
+```
+sudo apt-get install lib32z1
+sudo apt-get install lib32stdc++6
+```
+此外, 编译报错时还要安装SDK Tools里的Android Support Repository
+
+# jekyll安装
 
 安装ruby
 ```
@@ -65,3 +101,7 @@ sudo apt-get install zlib1g-dev
 ```
 sudo gem install github-pages sudo gem install jekyll
 ```
+
+# 资料搜索方法
+https://github.com/getlantern/lantern
+https://github.com/hawx1993/accessing-Google
