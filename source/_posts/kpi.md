@@ -11,3 +11,7 @@ categories:
 
 使用gulp生成sprites图片和样式表
 http://www.w3ctrain.com/2015/12/09/generating-sprites-with-gulp/
+
+# handlebars
+预编译模板
+
