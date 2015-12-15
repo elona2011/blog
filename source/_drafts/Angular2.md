@@ -276,3 +276,56 @@ this.endtime = parseInt(this.playbilllist.playbilllist[0].endTimeMilli);
 参考：
 http://www.shmck.com/angular-2-pipes/
 https://github.com/auth0/angular2-pipes
+
+7 bootstrap
+启动Main程序，[]中的绑定将全局可用
+例：bootstrap(App, []);
+8 inject
+1.template中，注入的类为父子关系
+<pet-list >
+<pet-input></pet-input>
+</pet-list>
+
+2.import
+import {PetList} from 'byinjection/PetList';
+import { Inject, forwardRef} from 'angular2/angular2'; 
+
+3.class注入，调用注入class的方法
+export class PetInput {
+  petList: PetList;
+
+  constructor(@Inject(forwardRef(()=>PetList)) petList:PetList) { //petList为单例，指向dom树中的<pet-list>
+    this.petList = petList;
+  }
+
+  doSomeThing(){
+  this.petList.addItem(...); //调用petList的方法，可以传参
+}
+}
+
+
+
+参考：
+https://github.com/SekibOmazic/angular2-playground
+http://blog.thoughtram.io/angular/2015/09/03/forward-references-in-angular-2.html
+9 事件
+9.1 系统事件
+click事件
+<div (click)="toggle()">
+(click)监听click事件
+toggle()事件触发函数
+<div [hidden]="!visible">
+[hidden] 中括号将HTML元素或组件的属性绑定到组件模型的某个表达式，当表达式的值变化时，对应的DOM对象将自动得到更新。
+visible为对应class中定义的变量
+keyup事件
+例：<input class="form-control" type="text" placeholder="Your new friend" #friend (keyup) ="update(friend.value)">
+键盘事件
+1.document方法：
+将下面代码加入class的constructor中
+document.onkeydown = function(event) {
+  switch (event.keyCode) {
+    case 38:
+      alert('clear');
+      break;
+  }
+}
