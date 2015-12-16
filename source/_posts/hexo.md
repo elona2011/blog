@@ -55,10 +55,7 @@ deploy:
 [http://www.yczmm.com/hexo-deploy%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.html](http://www.yczmm.com/hexo-deploy%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.html)
 [http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/](http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/)
 
-#### 草稿
+# Next主题
 
-目录：source/_drafts
-
-预览：
-
-
+``layout/_partials/header.swig`` 头部模板, 可以修改结构和样式
+_config.yml 可设置菜单的FontAwesome图标

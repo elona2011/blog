@@ -13,6 +13,19 @@ categories:
 ``Ctrl+w`` 关闭当前标签页
 ``Ctrl+Tab`` 往右切换一个标签页
 
+## launcher自定义sh
+```
+sudo -i gedit /usr/share/applications/name.desktop
+
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=unmount-mount
+Icon=/path/to/icon/icon.svg
+Exec=/path/to/file/mount-unmount.sh
+```
+保存后将新创建的图标拖到launcher上
+
 # 文件
 ``ln -s /media/nari/`` #在当前文件夹创建软链接到/media/nari/
 
@@ -26,9 +39,9 @@ categories:
 ``mount /dev/cdrom /mnt`` 挂载光驱到/mnt
 
 # 关机
-``shutdown -h 10`` 十分钟后关机 
-``shutdown -h 23:30`` 下一个23：30关机 
-``shutdown -h now`` 立即关机 
+``sudo shutdown -h 10`` 十分钟后关机
+``sudo shutdown -h 23:30`` 下一个23：30关机 
+``shutdown -h now`` 立即关机 不要sudo
 ``reboot`` 重启
 
 # 系统版本

@@ -40,9 +40,9 @@ date: 2015-11-11 23:42:17
 
 [鸟哥Linux](http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php )
 
-#### 有趣
+#### 图标
 
-[EMOJI](http://www.emoji-cheat-sheet.com/) 
+[EMOJI](http://www.emoji-cheat-sheet.com/) | [IcoMoon](https://icomoon.io/) | [FontAwesome](http://fontawesome.io/icons/)
 
 ## CDN
 

@@ -26,7 +26,11 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
-
+  wiki: globe
+  github: github
+  weibo: weibo
+  twitter: twitter
+  facebook: facebook-square
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
