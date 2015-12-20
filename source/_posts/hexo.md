@@ -19,7 +19,22 @@ categories:
 # tags
 ``tags: [js, jq]`` 文章头部的tags写法
 
-## deploy
+# 图片引用
+1 将_config.yml文件中的post_asset_folder设为true，此后用hexo new创建的文件都会有一个同名文件夹
+```
+post_asset_folder: true   //_config.yml
+```
+2 将被引图片放在同名文件夹中，通过以下语法引用
+```
+{% asset_path slug %}
+{% asset_img slug [title] %}
+{% asset_link slug [title] %}
+
+{% asset_img example.jpg This is an example image %}
+```
+
+
+# deploy
 
 可以使用HTTPS和SSH两种方式。SSH可以免去deploy时输入密码
 使用HTTPS deploy方法后（ https://hexo.io/docs/deployment.html ），windows下可能会报错：
@@ -59,3 +74,6 @@ deploy:
 
 ``layout/_partials/header.swig`` 头部模板, 可以修改结构和样式
 _config.yml 可设置菜单的FontAwesome图标
+
+``source/css/_variables/base.styl`` 基础样式
+``$font-size-base           = 20px`` 基础字体大小

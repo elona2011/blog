@@ -204,8 +204,13 @@ myObject['true"]; //"foo"
 myObject["3"]; //"bar"
 myObject["[object Object]"]; //"baz"
 ```
+还可以写成:
+```
+~function b(){}();
++function b(){}();
+```
 
-get和set
+## get和set
 var my={
 get a(){return this._a_;},
 set a(val){this._a_=val*2;}
@@ -376,3 +381,7 @@ el.classList.toggle('className');
 打印时间间隔，能显示到微秒级，new Date()只显示到毫秒级
 console.time('a')
 console.timeEnd('a')
+
+# 文章收集
+JS模板
+http://div.io/topic/758 

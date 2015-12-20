@@ -26,6 +26,7 @@ Exec=/path/to/file/mount-unmount.sh
 ```
 保存后将新创建的图标拖到launcher上
 
+
 # 文件
 ``ln -s /media/nari/`` #在当前文件夹创建软链接到/media/nari/
 
@@ -37,6 +38,28 @@ Exec=/path/to/file/mount-unmount.sh
 ``rm -rf`` 删除目录和文件及子目录和子文件(小心操作)
 
 ``mount /dev/cdrom /mnt`` 挂载光驱到/mnt
+``sudo mount /dev/sdb1 /media/work`` 挂载sdb1分区
+``umount /dev/sdb1`` 卸载分区，已挂载的分区在/etc/mtab文件中
+
+开机自动挂载分区
+```
+$ sudo fdisk -l  #查看分区
+...
+设备       启动      Start     末尾     扇区   Size Id 类型
+/dev/sdb1  *            63  629153594  629153532   300G  7 HPFS/NTFS/exFAT
+/dev/sdb2        629153656 1953523711 1324370056 631.5G  f W95 扩展 (LBA)
+/dev/sdb5        629153658 1564775696  935622039 446.1G  7 HPFS/NTFS/exFAT
+/dev/sdb6       1564776448 1936959487  372183040 177.5G 83 Linux
+/dev/sdb7       1936961536 1953523711   16562176   7.9G 82 Linux 交换 / Solaris
+...
+
+$ sudo gedit /etc/fstab
+... #在文件尾部添加，可以man fstab查看参数定义
+/dev/sdb1 /media/work ntfs defaults 0 0    
+```
+
+## 文件的颜色
+蓝色表示目录；绿色表示可执行文件；红色表示压缩文件；浅蓝色表示链接文件；白色表示其他文件；黄色是设备文件
 
 # 关机
 ``sudo shutdown -h 10`` 十分钟后关机

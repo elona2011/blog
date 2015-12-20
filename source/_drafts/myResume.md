@@ -9,3 +9,6 @@ ebase框架
 KPI优化
 1handlebars模板抽取, 替换juicer
 2
+
+千米1年，开始是宁派
+软通半年，学Angular2

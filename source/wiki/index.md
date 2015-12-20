@@ -4,6 +4,7 @@ date: 2015-11-11 23:42:17
 
 
 # 我的笔记
+
 [js](../js/javascript笔记/) | [正则](../js/regex/)
 
 # Js：
@@ -18,15 +19,14 @@ date: 2015-11-11 23:42:17
 
 [cnodejs](https://cnodejs.org/getstart) | [alsotang-node-lessons](https://github.com/alsotang/node-lessons) | [nodebeginner](http://www.nodebeginner.org/index-zh-cn.html)
 
-## 中文博客
+## 博客
 
-[damoqiongqiu](http://damoqiongqiu.iteye.com/ ) | [liaoxuefeng](http://www.liaoxuefeng.com/) | [yannhe](http://yannhe.com/c3 ) | [勾三股四](http://jiongks.name/) 
+[ejohn](http://ejohn.org/) | [damoqiongqiu](http://damoqiongqiu.iteye.com/ ) | [liaoxuefeng](http://www.liaoxuefeng.com/) | [yannhe](http://yannhe.com/c3 ) | [勾三股四](http://jiongks.name/) | [小胡子哥](http://www.barretlee.com/entry/)
+[gxc](http://gxcsoccer.github.io/) | [顔海镜](http://yanhaijing.com/)
 
-## 外国博客
-[ejohn](http://ejohn.org/)
+## 博客工具
 
-## 播客
-[devchat](https://devchat.tv/js-jabber) 
+[hexo](https://hexo.io/) | [hexo-next](http://theme-next.iissnan.com/) | [markdown1](https://github.com/LearnShare/Learning-Markdown) | [markdown2](https://github.com/guodongxiaren/README) | [百度统计](http://tongji.baidu.com/) |
 
 ## 书籍
 
@@ -57,6 +57,7 @@ date: 2015-11-11 23:42:17
 [tangguangyao](http://tangguangyao.github.io/) | [zhangwenli](http://zhangwenli.com/) | [pandara](http://pandara.xyz/) | [w3ctrain](http://www.w3ctrain.com/about/)
 
 ## todo
+
 11.16
 http://www.baidufe.com/ 博客不错
 http://www.baidufe.com/fehelper 图片特效学习一下
