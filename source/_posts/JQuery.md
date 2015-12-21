@@ -41,3 +41,5 @@ classList属性：类似className属性，返回的是类数组
 .classList.add():增加一个class
 .classList.remove():移除一个class
 
+``$(function(){ });`` 当文档载入完毕就执行
+``$(document).ready(function(){ })`` 同上
