@@ -1,10 +1,16 @@
-title: css笔记
+title: CSS & DOM 笔记
 tags: css
 date: 2015-01-03 19:22:57
 categories:
     - css
 ---
 
+# selectors
+http://www.w3.org/TR/selectors/#selectors
+
+.style.cssText 元素的style属性值,直接.style是一个对象
+
+色值三位#abc 转为6位#aabbcc 三位色值在CSS中可使用
 
 # inline-block
 inline-block元素间，换行或有空格，会显示出一个空格的间距，实际页面就是显示了一个空格

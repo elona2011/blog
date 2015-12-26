@@ -232,7 +232,10 @@ Object.getOwnPropertyName(myObject); //返回一个数组，包含所有属性�
 ```
 var xhr = new XMLHttpRequest();
 xhr.open('get', 'http://yanjie.me/');
-xhr.send()
+xhr.onload = function() { /* do something */ }
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.setRequestHeader('Content-Length', JSON.stringify(data).length);
+xhr.send(JSON.stringify(data));
 xhr.status
 xhr.responseText
 ```
@@ -247,6 +250,8 @@ Access-Control-Request-Headers: 自定义的头部，所有用setRequestHeader�
 ```
 Access-Control-Allow-Origin: "*" //表示该网站支持跨域请求
 ```
+
+https的页面请求http的ajax请求会报错
 
 # ES6
 ## let

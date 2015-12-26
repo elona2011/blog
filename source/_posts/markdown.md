@@ -11,7 +11,7 @@ categories:
 有时候换行不太好控制，可以回车后加一个中文空格
 
 # <font color=red>内联样式</font>
-<font color=green>hexo</font><font color=black>可以</font><font color=blue>直接</font><font color=yellow>使用</font><font color=orange>html标签给文字添加样式</font>
+<font color='green'>hexo</font><font color='black'>可以</font><font color='blue'>直接</font><font color='yellow'>使用</font><font color='orange'>html标签给文字添加样式</font>
 
 # 代码
 
