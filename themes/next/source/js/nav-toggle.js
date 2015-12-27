@@ -11,3 +11,9 @@ $(document).ready(function () {
     });
   });
 });
+
+function scrollBg(){
+  $('#header')[0].style.backgroundPositionY = (0 - window.scrollY) + 'px';
+}
+
+document.addEventListener('scroll', scrollBg, false);

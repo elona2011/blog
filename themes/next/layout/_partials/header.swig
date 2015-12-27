@@ -10,9 +10,7 @@
 
   <div class="custom-logo-site-title">
     <a href="{{ config.root }}"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
       <span class="site-title">{{ config.title }}</span>
-      <span class="logo-line-after"><i></i></span>
     </a>
   </div>
   <p class="site-subtitle">{{ config.subtitle }}</p>
@@ -36,9 +34,9 @@
         <li class="menu-item menu-item-{{ itemName }}">
           <a href="{{ url_for(path) }}" rel="section">
             {% if theme.menu_icons.enable %}
-              <i class="menu-item-icon fa fa-{{theme.menu_icons[itemName] || 'question-circle'}} fa-2x"></i> <br />
+              <i class="menu-item-icon fa fa-{{theme.menu_icons[itemName] || 'question-circle'}} fa-2x"></i>
             {% endif %}
-            {{ __('menu.' + itemName) }}
+            <span class="">{{ __('menu.' + itemName) }}</span>
           </a>
         </li>
       {% endfor %}

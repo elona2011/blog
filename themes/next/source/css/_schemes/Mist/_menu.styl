@@ -8,33 +8,47 @@
 
 .menu {
   float: right;
-  margin: 8px 0 0 20px;
-  padding: 0 20px;
+  width: 130px;
 
   +mobile() {
     margin: 0;
     padding: 0;
   }
 
-  br { display: none; }
 
   .menu-item {
-    margin: 0;
+    padding: 7px 38px;
     +mobile() { display: block; }
   }
 
   .menu-item a {
-    padding: 5px 10px;
+    padding: 5px 0px;
     background: none;
     border: none;
     transition-property: background;
+    color: #aaa;
 
     +mobile() {
       text-align: left;
     }
 
-    &:hover { background: #e1e1e1; }
+    span{
+      display: none;
+    }
   }
+
+  .menu-item:hover{
+    padding: 0px 1px;
+    a { 
+      background: rgba(225,225,225,0.65);
+      color: #222;
+      font-size: 1em;
+      span{
+        display: inline-block;
+      }
+    }
+  }
+   
 
   a::before {
       display: none;
