@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 
 function scrollBg(){
-  $('#header')[0].style.backgroundPositionY = (0 - window.scrollY) + 'px';
+  $('#header').css('background-position', '0px -' + (window.scrollY / 1.5) + 'px');
 }
 
 document.addEventListener('scroll', scrollBg, false);

@@ -11,3 +11,6 @@ ctrl+t 新建标签
 Timeline
 添加时间戳
 console.timeStamp('oninit');
+
+# 实验性功能
+chrome://flags/
