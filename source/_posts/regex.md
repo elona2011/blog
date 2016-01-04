@@ -1,7 +1,7 @@
 title: 正则表达式笔记
 tags:
   - 正则
-  - js
+  - javascript
 date: 2015-07-01 00:13:50
 categories:
       - js
@@ -59,6 +59,8 @@ categories:
 
 # 或操作
 ``/(ab)+|(cd)+/`` 匹配出现一次或多次的ab或cd
+``/ab|cd/`` 匹配ab或者cd
+``/a(b|c)d/`` 匹配abd或acd
 
 # 反向引用
 ``/^([dtn])a\1/`` 匹配a前后的字母相同,如dad

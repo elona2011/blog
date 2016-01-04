@@ -1,11 +1,8 @@
 title: JQuery
 date: 2014-11-17 22:45:10
 tags: 
-    -jq
-    -js
-categories:
-      - js
-      - jq
+    - jquery
+    - javascript
 ---
 
 JQuery

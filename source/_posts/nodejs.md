@@ -1,6 +1,6 @@
 date: 2015-08-30 21:53:12
 title: nodejs笔记
-tags: [node, js]
+tags: [node, javascript]
 categories:
       - 后端
 ---

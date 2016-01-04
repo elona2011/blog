@@ -1,6 +1,6 @@
 title: gulp用法
 tags:
-  - js
+  - javascript
   - gulp
 date: 2015-09-11 20:43:10
 categories:

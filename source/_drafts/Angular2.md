@@ -329,3 +329,61 @@ document.onkeydown = function(event) {
       break;
   }
 }
+
+2.window方法：
+将下面代码加入class的constructor中
+window.addEventListener("keydown",()=>{
+//1、显示miniepg
+if (window.event && window.event.which === 73) {
+this.showFlag = true;
+}
+}, true);
+
+3.Angular2方法：
+1.import
+import {KeyEventsPlugin} from 'angular2/src/core/render/dom/events/key_events';
+
+2.template中修改需要加入键盘事件的HTML元素，使用时该元素要先获得焦点
+<div (keyup) ="onKeyDown($event)" tabindex="0">
+
+3.class中加入以下方法，取得的lastKey为字符串
+onKeyDown(event): void {
+  this.lastKey = KeyEventsPlugin.getEventFullKey(event);
+  event.preventDefault();
+}
+
+9.2 自定义事件
+1.引入依赖
+import {Component, View, EventEmitter} from 'angular2/angular2';
+
+2.@Component声明
+@Component({
+    selector: 'zippy',
+    events: ['open', 'close']
+})
+
+3.class类里定义事件变量
+export class Zippy {
+constructor() {
+  this.open = new EventEmitter();
+  this.close = new EventEmitter();}}
+
+4.触发方法
+toggle()方法执行，将触发事件：
+toggle() {
+      (this.visible)?this.open.next({src:’111’}):this.close.next();
+    }
+{src:’111’}为事件传参，在下面的$event会收到这个参数
+
+5.使用该组件事件
+<zippy (open)="sayOpen($event)" (close)="sayClose()"></zippy>
+$event为事件传入参数
+(open)可写为on-open，(close)可写为on-close
+
+事件从组件内部发送到组件上，从而可以调用其它组件的方法：
+<gadget-input (store)="gadget.onAddItem($event)"></gadget-input>
+<gadget-list #gadget></gadget-list>
+9.3 Observer事件
+1.引用依赖
+import {ObservableComponent} from 'base/core/ObservableComponent';
+import {Event} from 'base/core/Event';

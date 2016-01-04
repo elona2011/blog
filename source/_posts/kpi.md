@@ -1,7 +1,7 @@
 title: KPI
 date: 2015-12-11 22:39:56
 tags:
-  - js
+  - javascript
   - gulp
 categories:
   - js

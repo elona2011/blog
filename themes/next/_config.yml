@@ -1,7 +1,7 @@
 # when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  categories: /categories
+  #categories: /categories
   about: /about
   archives: /archives
   tags: /tags
@@ -72,10 +72,10 @@ scheme: Mist
 #  - always  expand for all pages automatically
 #  - hide    expand only when click on the sidebar toggle icon.
 #  - remove  Totally remove sidebar including sidebar toggle icon.
-sidebar: post
+# sidebar: post
 #sidebar: always
 #sidebar: hide
-#sidebar: remove
+sidebar: remove
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.

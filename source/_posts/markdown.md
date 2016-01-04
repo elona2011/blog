@@ -1,9 +1,8 @@
 title: markdown笔记
 tags:
-  - md
+  - markdown
 date: 2015-04-24 21:39:19
-categories:
-      - blog
+
 ---
 
 # 换行

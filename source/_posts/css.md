@@ -20,6 +20,30 @@ inline-block元素间，换行或有空格，会显示出一个空格的间距�
 方法1. 将DIV元素写成一行,中间不要换行
 方法2. 或者在父元素上设置font-size:0
 
+# animation
+```
+#RecmWidget_img1{
+        left: 0px;
+        animation-delay: 1s;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        animation-name: slideImage1;
+    }
+
+@keyframes slideImage1 {
+  0% { left: 0; opacity:1;z-index:0; }
+  11% { left: -272px;opacity:1;z-index:0; }
+  12% { left: -272px; opacity:0; z-index:-1; }
+  13% { left: 272px; opacity:0; z-index:-1; }
+  14% { left: 272px; opacity:1; z-index:0; }
+  33% {left: 272px; opacity:1; z-index:0;}
+  44% {left: 272px; opacity:1; z-index:0;}
+  66% {left: 272px; opacity:1; z-index:0;}
+  77% { left: 0px; opacity:1; z-index:0; }
+  100% { left: 0px; opacity:1; z-index:0; }
+}
+```
+
 # css权重
 1.多个选择器可能会选择同一个元素，有3个规则，从上到下重要性降低： 
     !important的用户样式 

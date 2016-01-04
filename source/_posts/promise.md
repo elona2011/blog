@@ -1,7 +1,7 @@
 title: promise笔记
 date: 2015-12-22 22:48:36
 tags:
-    - js
+    - javascript
     - ES6
 ---
 

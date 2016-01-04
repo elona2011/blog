@@ -11,10 +11,12 @@ date: 2015-11-11 23:42:17
 
 [MDN](https://developer.mozilla.org/en-US/) | [W3](http://www.w3.org/standards/webdesign/) | [Jq](http://api.jquery.com/) | [Lo-dash](https://lodash.com/docs) | [Underscore](http://www.bootcss.com/p/underscore/#extend) | [Webpack](http://webpack.github.io/docs/) | [Gulp](https://github.com/gulpjs/gulp/tree/master/docs) | [Mocha](https://mochajs.org/) | [React](https://facebook.github.io/react/) | [PhantomJS](http://phantomjs.org/documentation/) | [ESlint](http://eslint.org/docs/user-guide/configuring)
 [阮一峰JS](http://javascript.ruanyifeng.com/) | [在线编码测试](http://jsbin.com) | [正则参考](http://www.xiaoleilu.com/regex-guide/) | [正则测试](http://www.regexplanet.com)
+[codepen](http://codepen.io/)
 
 # CSS
 
 [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) | [Less](http://lesscss.org/features/#features-overview-feature) | [Stylus](http://stylus-lang.com/) | [w3cplus](http://www.w3cplus.com/) | [Purecss](http://purecss.io/)
+[the css ninja](http://www.thecssninja.com/)
 
 # News
 

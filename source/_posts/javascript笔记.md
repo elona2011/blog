@@ -1,13 +1,12 @@
 title: javascript笔记
 date: 2014-10-21 20:56:51
-tags: js
-categories:
-      - js
+tags: javascript
+
 ---
 
-# 基本类型
+# 数据类型
 
-基本类型为：Undefined、Null、Boolean、Number和String
+数据类型为：undefined, boolean, number, string, object，前4种为基本类型，第5种为引用类型
 基本类型无法添加属性,如需添加可以在prototype上添加
 ```
 var a = '111';
@@ -17,6 +16,11 @@ console.log(a.length); //3
 String.prototype.bb = '33';
 a.bb; //'33'
 ```
+
+typeof可返回6种类型：undefined, boolean, number, string, object, function
+
+基本类型中的假值
+false, 0, "", NaN, null, undefined, 除了这6个值，其它所有值均可隐式转换为true 
 
 # 变量
 

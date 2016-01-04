@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  if(/^\/wiki\/|^\/archives\/|^\/tags\//.test(window.location.pathname)){
+    $('#header').css('height', '100px');
+  }
+
   $('.content img').not('.group-picture img').each(function () {
 
     var $image = $(this);
