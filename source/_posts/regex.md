@@ -3,8 +3,7 @@ tags:
   - 正则
   - javascript
 date: 2015-07-01 00:13:50
-categories:
-      - js
+
 ---
 
 # 字符

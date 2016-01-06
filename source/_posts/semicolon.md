@@ -1,5 +1,5 @@
 title: javascript自动插入分号
-date: 2015-01-03 19:01:55
+date: 2015-05-03 19:01:55
 tags:
     - javascript
 ---

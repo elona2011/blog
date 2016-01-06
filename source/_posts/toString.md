@@ -1,5 +1,5 @@
 title: toString和valueOf的隐式转换
-date: 2015-01-02 17:33:45
+date: 2015-04-02 17:33:45
 tags:
     - javascript
 ---

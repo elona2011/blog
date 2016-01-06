@@ -5,13 +5,13 @@ date: 2015-11-11 23:42:17
 
 # 我的笔记
 
-[JS笔记](../js/javascript笔记/) | [正则](../js/regex/)
+[JS笔记](../2015/01/21/javascript笔记/) | [正则](../2015/07/01/regex/)
 
 # JS
 
 [MDN](https://developer.mozilla.org/en-US/) | [W3](http://www.w3.org/standards/webdesign/) | [Jq](http://api.jquery.com/) | [Lo-dash](https://lodash.com/docs) | [Underscore](http://www.bootcss.com/p/underscore/#extend) | [Webpack](http://webpack.github.io/docs/) | [Gulp](https://github.com/gulpjs/gulp/tree/master/docs) | [Mocha](https://mochajs.org/) | [React](https://facebook.github.io/react/) | [PhantomJS](http://phantomjs.org/documentation/) | [ESlint](http://eslint.org/docs/user-guide/configuring)
 [阮一峰JS](http://javascript.ruanyifeng.com/) | [在线编码测试](http://jsbin.com) | [正则参考](http://www.xiaoleilu.com/regex-guide/) | [正则测试](http://www.regexplanet.com)
-[codepen](http://codepen.io/)
+[codepen](http://codepen.io/) | [electron](http://electron.atom.io/)
 
 # CSS
 
@@ -62,7 +62,7 @@ date: 2015-11-11 23:42:17
 
 # 值得借鉴的博客和网站
 
-[tangguangyao](http://tangguangyao.github.io/) | [zhangwenli](http://zhangwenli.com/) | [pandara](http://pandara.xyz/) | [w3ctrain](http://www.w3ctrain.com/about/)
+[tangguangyao](http://tangguangyao.github.io/) | [zhangwenli](http://zhangwenli.com/) | [pandara](http://pandara.xyz/) | [w3ctrain](http://www.w3ctrain.com/about/) | [simurai](http://simurai.com)
 
 # Todo
 

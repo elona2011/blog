@@ -14,7 +14,7 @@ baidu_analytics: eeb4365c48e9e9569f2c248f69ffc563
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://elona2011.github.io/
 root: /
-permalink: :category/:title/
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -72,4 +72,4 @@ deploy:
   repo: git@github.com:elona2011/elona2011.github.io.git
   branch: master
 
-since: 2014
+since: 2015

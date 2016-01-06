@@ -1,5 +1,5 @@
 title: javascript笔记
-date: 2014-10-21 20:56:51
+date: 2015-01-21 20:56:51
 tags: javascript
 
 ---
@@ -256,6 +256,10 @@ Access-Control-Allow-Origin: "*" //表示该网站支持跨域请求
 ```
 
 https的页面请求http的ajax请求会报错
+
+## JSONP
+
+http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html
 
 # ES6
 ## let
