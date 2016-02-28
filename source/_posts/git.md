@@ -50,11 +50,8 @@ git push origin master
 ## 之后git
 ``git add .``
 ``git commit -m 'xxx comment'``
-<<<<<<< HEAD
 ``git push``
 
 # SVN
 http://my.oschina.net/donhui/blog/385452
-=======
-``git push``
->>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
+
