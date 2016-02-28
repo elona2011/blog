@@ -6,12 +6,21 @@ categories:
 ---
 
 
+<<<<<<< HEAD
 
 # 常用快捷键：
 ctrl+tab　切换标签页
 ctrl+w 关闭当前标签
 
 # VIM模式
+=======
+使用环境：ubuntu14.04
+
+常用快捷键：
+ctrl+tab　切换标签页
+ctrl+w 关闭当前标签
+
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 打开关闭VIM模式：
 For Windows edition, Preferences -> Settings-User -> 注释vintage这一行，保存即可
 For Linux edition, add one property in the file 'Preferences.sublime-settings': ``"ignored_packages":[]``
@@ -35,10 +44,17 @@ like:
 <kbd>p</kbd> //在当前行粘贴
 <kbd>D</kbd> //从当前位置删除到行尾
 
+<<<<<<< HEAD
 # 常用插件
 HTMLPrettify
 
 # 自定义系统设置
+=======
+## 常用插件
+HTMLPrettify
+
+## 自定义系统设置
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 菜单Preferences->Setting - User打开Preferences.sublime-settings，修改或添加内容。
 1 启动时打开上次最后关闭的文件：
 ```
@@ -48,6 +64,7 @@ HTMLPrettify
 }
 ```
 
+<<<<<<< HEAD
 2 关闭版本更新提示
 ```
 {
@@ -55,6 +72,8 @@ HTMLPrettify
 }
 ```
 
+=======
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 ## 自定义语法设置
 菜单Preferences->Setting - More->Syntax Specific - User打开JavaScript.sublime-settings，修改或添加内容。
 1 设置TAB缩进长度

@@ -40,5 +40,8 @@ classList属性：类似className属性，返回的是类数组
 
 ``$(function(){ });`` 当文档载入完毕就执行
 ``$(document).ready(function(){ })`` 同上
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117

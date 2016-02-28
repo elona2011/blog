@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 title: Git & SVN
 date: 2015-03-21 12:31:49
 tags: 
     - git
     - svn
+=======
+title: Git笔记
+date: 2015-03-21 12:31:49
+tags: [git]
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 categories:
       - 版本控制
 ---
@@ -44,7 +50,11 @@ git push origin master
 ## 之后git
 ``git add .``
 ``git commit -m 'xxx comment'``
+<<<<<<< HEAD
 ``git push``
 
 # SVN
 http://my.oschina.net/donhui/blog/385452
+=======
+``git push``
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117

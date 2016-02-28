@@ -1,5 +1,9 @@
 title: windows
+<<<<<<< HEAD
 date: 2015-06-15 22:38:01
+=======
+date: 2015-12-15 22:38:01
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 tags:
     - windows
 ---

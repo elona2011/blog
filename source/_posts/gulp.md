@@ -39,6 +39,7 @@ gulp.task('default', function () {
     gutil.log(gutil.colors.red('error'))
     gutil.log(gutil.colors.green('message:') + "some")
 })
+<<<<<<< HEAD
 ```
 
 (gulp-sequence)[https://github.com/teambition/gulp-sequence]
@@ -99,4 +100,6 @@ gulp.task('svn.update', function(cb) {
         cb(err);
     });
 });
+=======
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 ```

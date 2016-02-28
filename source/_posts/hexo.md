@@ -1,7 +1,13 @@
 title: 使用hexo布置blog
 date: 2015-01-08 17:53:31
 tags: 
+<<<<<<< HEAD
     - blog
+=======
+    - hexo
+categories:
+      - blog
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 ---
 
 

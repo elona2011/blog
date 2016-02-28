@@ -23,9 +23,12 @@ nvm的安装后，运行node程序可能会导致如下错误
 ``$ nvm alias default 0.12``
 from: [https://github.com/alsotang/node-lessons/tree/master/lesson0](https://github.com/alsotang/node-lessons/tree/master/lesson0)
 
+<<<<<<< HEAD
 # npm
 ``npm install -d`` 显示安装日志
 
+=======
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 ## npm源
 
 ``npm config set registry http://registry.cnpmjs.org`` 国内源

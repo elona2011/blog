@@ -15,6 +15,7 @@ http://www.w3ctrain.com/2015/12/09/generating-sprites-with-gulp/
 # handlebars
 预编译模板
 
+<<<<<<< HEAD
 function aaa(o1, o2, o3, o4, e1, e2){
     var best_result;
     var result = [];
@@ -68,3 +69,5 @@ function b(){
         }
     }
 }
+=======
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117

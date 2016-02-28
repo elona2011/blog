@@ -22,5 +22,8 @@ spirits雪碧图、精灵图
 sea.js
 juicer
 gulp
+<<<<<<< HEAD
 
 http://www.kuqin.com/shuoit/20151201/349274.html
+=======
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117

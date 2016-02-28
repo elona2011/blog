@@ -9,8 +9,13 @@ date: 2015-11-11 23:42:17
 
 # JS
 
+<<<<<<< HEAD
 [MDN](https://developer.mozilla.org/en-US/) | [W3](http://www.w3.org/standards/webdesign/) | [Jq](http://api.jquery.com/) | [Lo-dash](https://lodash.com/docs) | [Underscore](http://www.bootcss.com/p/underscore/#extend) | [Webpack](http://webpack.github.io/docs/) | [Gulp](https://github.com/gulpjs/gulp/tree/master/docs) | [Mocha](https://mochajs.org/) | [React](https://facebook.github.io/react/) | [PhantomJS](http://phantomjs.org/documentation/) | [ESlint](http://eslint.org/docs/user-guide/configuring) | [angular](https://angular.io/) | [bootstrap](http://getbootstrap.com/)
 [阮一峰JS](http://javascript.ruanyifeng.com/) | [在线编码测试](http://jsbin.com) | [plnkr](http://plnkr.co/) | [正则参考](http://www.xiaoleilu.com/regex-guide/) | [正则测试](http://www.regexplanet.com)
+=======
+[MDN](https://developer.mozilla.org/en-US/) | [W3](http://www.w3.org/standards/webdesign/) | [Jq](http://api.jquery.com/) | [Lo-dash](https://lodash.com/docs) | [Underscore](http://www.bootcss.com/p/underscore/#extend) | [Webpack](http://webpack.github.io/docs/) | [Gulp](https://github.com/gulpjs/gulp/tree/master/docs) | [Mocha](https://mochajs.org/) | [React](https://facebook.github.io/react/) | [PhantomJS](http://phantomjs.org/documentation/) | [ESlint](http://eslint.org/docs/user-guide/configuring)
+[阮一峰JS](http://javascript.ruanyifeng.com/) | [在线编码测试](http://jsbin.com) | [正则参考](http://www.xiaoleilu.com/regex-guide/) | [正则测试](http://www.regexplanet.com)
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 [codepen](http://codepen.io/) | [electron](http://electron.atom.io/)
 
 # CSS
@@ -21,7 +26,10 @@ date: 2015-11-11 23:42:17
 # News
 
 [echojs.com](http://www.echojs.com/) | [javascriptweekly.com](http://javascriptweekly.com/) | [ponyfoo.com](https://ponyfoo.com/) | [2ality.com](http://www.2ality.com/) | [css-tricks.com](https://css-tricks.com/)
+<<<<<<< HEAD
 [firstround](http://firstround.com/review/)
+=======
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 
 # 博文
 
@@ -31,10 +39,14 @@ date: 2015-11-11 23:42:17
 
 # 博客工具
 
+<<<<<<< HEAD
 [hexo](https://hexo.io/) | [hexo-next](http://theme-next.iissnan.com/) | [markdown1](https://github.com/LearnShare/Learning-Markdown) | [markdown2](https://github.com/guodongxiaren/README) | [百度统计](http://tongji.baidu.com/ 'adrthux') 
 
 # 面试题
 [1](http://blog.zhangruipeng.me/2015/03/15/JavaScript-Interview-1/) | [2](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions/Questions-and-Answers)
+=======
+[hexo](https://hexo.io/) | [hexo-next](http://theme-next.iissnan.com/) | [markdown1](https://github.com/LearnShare/Learning-Markdown) | [markdown2](https://github.com/guodongxiaren/README) | [百度统计](http://tongji.baidu.com/ 'adrthux') |
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 
 # 书籍
 
@@ -68,8 +80,12 @@ date: 2015-11-11 23:42:17
 
 [tangguangyao](http://tangguangyao.github.io/) | [zhangwenli](http://zhangwenli.com/) | [pandara](http://pandara.xyz/) | [w3ctrain](http://www.w3ctrain.com/about/) | [simurai](http://simurai.com)
 
+<<<<<<< HEAD
 # 1.17
 基于bootstrap的博客http://www.zhihu.com/question/27875096
 [苏杨的博客](http://www.soulteary.com/) 感觉用bootstrap做博客不错，可以做的更细致，要试一下
+=======
+# Todo
+>>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 
 
