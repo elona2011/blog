@@ -1,0 +1,50 @@
+title: Git & SVN
+date: 2015-03-21 12:31:49
+tags: 
+    - git
+    - svn
+categories:
+      - 版本控制
+---
+
+# 添加SSH keys
+https://help.github.com/articles/generating-ssh-keys/
+
+## 远程库克隆
+```
+git clone <SSH clone URL>
+```
+<SSH clone URL> 在github相应仓库首页右侧点击SSH clone URL的复制按钮
+
+## git stage
+同git add，文件快照
+
+## git commit
+```
+git commit -a
+```
+递交所有内容
+
+## 提交到远程库
+```
+git push origin master
+```
+
+# 远程库
+## 首次git
+最好先设置好ssh key, 并在github中创建一个新仓库, 复制SSH地址, 下面是本地操作
+``cd blog`` 进入要git的目录下
+``git init`` 创建初始版本库
+``git add .`` 将当前目录及子目录的所有文件添加到暂存区
+``git commit -m 'init repo'`` 提交暂存区到仓库区
+``git status`` 查看暂存区
+``git remote add origin git@github.com:elona2011/blog.git`` 添加远程库地址
+``git push -u origin master`` 推送本地内容, -u是关联分支, 以后直接用``git push``即可
+
+## 之后git
+``git add .``
+``git commit -m 'xxx comment'``
+``git push``
+
+# SVN
+http://my.oschina.net/donhui/blog/385452

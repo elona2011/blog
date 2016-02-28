@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>我是学渣</title>
+    <style type="text/css">
+    h1{
+    	text-align: center;
+    }
+
+	#toast{
+		min-width:10px;		
+		position: absolute;
+		top:-50px;
+		left:45%;
+		border:1px #ccc solid;
+		padding:10px 20px;
+		background-color: #000;
+		color: #fff;
+		border-radius: 10px;
+		display: none;
+	}
+	#heading{
+		width: 320px;
+		border: 0px #ccc solid;
+        margin: 0 auto;
+        padding: 10px 0px;
+	}
+    #tf_box {
+        width: 300px;
+        height: 300px;
+        border: 1px #ccc solid;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .div_box {
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin: 2px;
+        padding: 7px;
+        border: 1px solid #aaaaaa;
+    }
+    *[draggable=true] {
+	    -moz-user-select:none;
+	    -khtml-user-drag: element;
+	    cursor: move;
+	}
+	img {	    	   
+	    display:inline-block;
+	    transition: all 100ms;
+	    position: absolute;
+	}
+	img.move {
+	    -webkit-transform:scale3d( 1.1, 1.1, 1.1 );
+	}
+    </style>
+    
+</head>
+
+<body>
+
+	<h1>我是学渣</h1>
+		
+	<div id="toast">这里输出鼓励消息</div>
+
+    <div id="tf_box">
+    </div>
+	
+	<div id="heading">
+	    <input id="instruct" type="button" value="玩法说明">
+	    <input id="btn" type="button" value="复位">
+	    <div id="gameMsg" style="padding-top:10px;">
+	    	当前级别: <b>1</b><br>
+			当前移动次数: <b>0</b><br>
+			总计移动次数: <b>0</b><br>
+	    </div>
+    </div>
+
+
+</body>
+
+<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+<script type="text/javascript">
+
+games = new GameBoard();
+games.beginGame();
+
+$('#btn').click(function() {
+	games.setupLevel();
+});
+$('#instruct').click(function() {
+	new cheesyWordGetter().instruct();
+});
+
+
+
+
+function cookieHelpers() {
+	//记录并输出每一步的信息
+	this.writeCookies = function(game) {		
+		var toWrite = "px=" +
+			game.level + " " +
+			game.totalClicks + " " +
+			game.currentClicks + " " +
+			game.dataY + " " +
+			game.pa + " " +
+			game.pb + " " +
+			game.dataP + " " +
+			";";
+		document.cookie = toWrite;
+		console.log(document.cookie);
+	}
+}
+
+
+function cheesyWordGetter() {
+	this.words = ['非常好', '干得漂亮', '帅呆了', '哇塞', 'I服U', '天才诞生了'];
+
+	/**
+	 * 页面过关鼓励提示
+	 * @return {[type]} [description]
+	 */
+	this.getWord = function() {
+		var _this = this;
+
+		$('#toast').html(_this.words[Math.floor(Math.random()*_this.words.length)]);
+
+		$('#toast').fadeIn().animate({top:"50px"}, "slow", function() {
+            $(this).animate({top: "-50px"}, 500).fadeOut();
+        });
+	}
+
+	/**
+	 * 玩法说明
+	 * @return {[type]} [description]
+	 */
+	this.instruct = function() {		
+		$('#gameMsg').html("如何才算赢：使拼板全部元素从小到大排列。拖动一个元素都另一个元素上，这两个元素就会交换位置。");
+	}
+
+	/**
+	 * 更新页面统计信息
+	 * @param  {[type]} game [description]
+	 * @return {[type]}      [description]
+	 */
+	this.updateCounts = function(game) {
+		var htmlMsg = "当前级别: <b>" + game.level + "</b><br>"+
+				      "当前移动次数: <b>" + game.currentClicks +"</b><br>"+
+					  "总计移动次数: <b>" + game.totalClicks + "</b><br>"+
+					  "";//this.dataY+"<br>"+this.dataP
+		$('#gameMsg').html(htmlMsg);
+
+	}
+}
+
+
+
+function GameBoard(){
+	var self = this;
+
+	this.cwg = new cheesyWordGetter();
+	this.cook = new cookieHelpers();
+	this.pa = '0';
+	this.pb = '0';
+	this.dataY = [];//原始序列
+	this.dataP = [];//排序序列
+	this.level = 1;//等级
+	this.currentClicks = 0; //当前移动次数
+	this.totalClicks = 0; //总计移动次数	
+
+	/**
+	 * 开始游戏
+	 * @return {[type]} [description]
+	 */
+	this.beginGame = function() {
+		var vv = self.createRandom(9,1,9);		
+		this.dataY = vv.toString();
+		this.dataP = vv;
+		this.cook.writeCookies(this);
+		self.renderBoard();
+	}
+
+	/**
+	 * 进入下一关
+	 * @return {[type]} [description]
+	 */
+	this.resetGame = function() {
+		this.level++;
+
+		var vv = self.createRandom(9,1,9+this.level);
+		this.dataY = vv.toString();
+		this.dataP = vv;
+
+		this.cook.writeCookies(this);
+		self.setupLevel();
+	}
+
+	/**
+	 * 复位
+	 * @return {[type]} [description]
+	 */
+	this.setupLevel = function(){
+		this.currentClicks = 0;//复位当前移动次数
+		self.renderBoard();
+        self.updateCounts();
+	}
+
+	/**
+	 * 产生不重复的随机数
+	 * @param  {[type]} num  [要产生多少个随机数]
+	 * @param  {[type]} from [产生随机数的最小值]
+	 * @param  {[type]} to   [产生随机数的最大值]
+	 * @return {[type]}      [description]
+	 */
+	this.createRandom = function(num ,from ,to){
+		var arr=[];
+		for(var i=from;i<=to;i++)
+			arr.push(i);
+		arr.sort(function(){
+			return 0.5-Math.random();
+		});
+		arr.length=num;
+		return arr;
+	}
+
+	/**
+	 * 初始画布	
+	 * @return {[type]}      [description]
+	 */
+	this.renderBoard = function(){
+		var html = '';
+		$.each(this.dataY.split(","),function(i,itme){
+			html+='<div class="div_box" >';
+	        html+='<img draggable="true" src="image/tf/'+itme+'.png" id="drag'+itme+'" data-num="'+itme+'" />';
+	        html+='</div>';
+		});
+		$('#tf_box').html("").append(html);
+
+		var fl = $('.div_box').find("img");
+		fl.each(function(index, el) {
+			var _this=$(this);
+			// console.log(_this.attr("data-num"));
+			var t = _this.position().top;
+			var l = _this.position().left;
+
+			_this.css({
+				"top": t+'px',
+				"left": l+'px'
+			});
+
+
+		});
+
+		self.isDrop();
+	}
+	
+	/**
+	 * 绑定拖动事件
+	 * @return {Boolean} [description]
+	 */
+	this.isDrop=function(){
+		var _this = this;
+	    var origin, is_moving = false;
+	    $("#tf_box").find("img").on("drop",
+	        function(e) {
+	        	_this.pa=$(origin).attr('data-num');
+	        	_this.pb=$(e.target).attr('data-num');
+	            var origin_pos = $(origin).position();
+	            var target_pos = $(e.target).position();
+
+	            $(origin).addClass("move").animate(target_pos, "fast",
+	                function() {
+	                    $(this).removeClass("move");
+	                });
+
+	            $(e.target).addClass("move").animate(origin_pos, "fast",
+	                function() {
+	                    $(this).removeClass("move");
+	                });
+
+	            self.updateCount();
+	        }).on("dragstart",
+	        function(e) {
+	            if (is_moving) {
+	                return false;
+	            }
+	            is_moving = true;
+	            e.originalEvent.dataTransfer.effectAllowed = 'move';
+	            origin = this;
+
+	        }).on("dragover",
+	        function(e) {
+	        	if (e.stopPropagation()) e.stopPropagation();
+	            if (e.preventDefault) e.preventDefault(); // allows us to drop
+	            is_moving = false;
+	            e.originalEvent.dataTransfer.dropEffect = 'move'; // only dropEffect='copy' will be dropable
+	        });
+    }
+
+    /**
+     * 更新统计数
+     * @return {[type]} [description]
+     */
+    this.updateCount = function() {
+		this.currentClicks++; //当前移动次数
+		this.totalClicks++; //总计移动次数
+		
+		self.isSort();
+		self.updateCounts();
+	}
+	this.updateCounts = function() {
+		this.cwg.updateCounts(this);
+		this.cook.writeCookies(this);
+	}
+
+	/**
+	 * 移动元素位置
+	 * @return {Boolean} [description]
+	 */
+	this.isSort = function(){
+		var _this=this;
+		
+		var a = this.pa;
+		var b = this.pb;
+
+		var arr = this.dataP;
+		
+		var i=0,len=arr.length,j,k;
+		for(;i<len;i++){
+			if(arr[i] == a)
+			{
+				j=i;
+			}
+			if(arr[i] == b)
+			{
+				k=i;
+			}
+		}
+		i=arr[j];
+		arr[j]=arr[k];
+		arr[k]=i;
+
+		self.ifSort();
+	}
+
+	/**
+	 * 判断元素是否序列排序
+	 * @return {[type]} [description]
+	 */
+	this.ifSort = function(){
+		var bo = false;
+		var arr = this.dataP;
+		for(var i=0;i<arr.length-1;i++){			
+			if(arr[i]>arr[i+1]){
+				bo = false;
+				return;
+			}else{
+				bo = true;
+			}			
+		}
+		if(bo){
+			this.cwg.getWord();
+			self.resetGame();
+		}
+	}
+}
+</script>
+
+</html>

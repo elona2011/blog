@@ -1,0 +1,68 @@
+// Menu
+// --------------------------------------------------
+.site-nav-toggle {
+  position: static;
+  float: right;
+}
+
+
+.menu {
+  position: fixed;
+  right: 0px;
+  width: 120px;
+
+  +mobile() {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .menu-item {
+    padding: 7px 38px;
+    +mobile() { display: block; }
+  }
+
+  .menu-item a {
+    padding: 5px 0px;
+    background: none;
+    border: none;
+    transition-property: background;
+    color: #aaa;
+
+    +mobile() {
+      text-align: left;
+    }
+
+    span{
+      display: none;
+    }
+  }
+
+  .menu-item:hover{
+    padding: 0px 1px;
+    a { 
+      background: rgba(225,225,225,0.65);
+      color: #222;
+      font-size: 1em;
+      span{
+        display: inline-block;
+      }
+    }
+  }
+   
+
+  a::before {
+      display: none;
+
+      +mobile() { display: block; }
+    }
+
+  +mobile() { float: none; }
+}
+
+.menu-left {
+  float: left;
+  +mobile() { float: none; }
+}
+
+/*.menu-item-icon { display: none; }*/
