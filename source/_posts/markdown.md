@@ -1,12 +1,7 @@
 title: markdown笔记
 tags:
-<<<<<<< HEAD
   - blog
-=======
-  - markdown
->>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 date: 2015-04-24 21:39:19
-
 ---
 
 # 换行

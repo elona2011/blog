@@ -1,16 +1,7 @@
 title: Linux命令及Ubuntu
 tags:
-<<<<<<< HEAD
   - ubuntu
 date: 2015-03-02 22:21:45
-
-=======
-  - linux
-  - backend
-date: 2015-03-02 22:21:45
-categories:
-      - 后端
->>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 ---
 
 # 快捷键
@@ -67,14 +58,11 @@ $ sudo gedit /etc/fstab
 ## 文件的颜色
 蓝色表示目录；绿色表示可执行文件；红色表示压缩文件；浅蓝色表示链接文件；白色表示其他文件；黄色是设备文件
 
-<<<<<<< HEAD
 # 网络
 ## iftop
 查看实时网络流量 interface top
 ``sudo apt-get install iftop`` 安装iftop 
 
-=======
->>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 # 关机
 ``sudo shutdown -h 10`` 十分钟后关机
 ``sudo shutdown -h 23:30`` 下一个23：30关机 

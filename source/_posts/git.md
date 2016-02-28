@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 title: Git & SVN
 date: 2015-03-21 12:31:49
 tags: 
     - git
     - svn
-=======
-title: Git笔记
-date: 2015-03-21 12:31:49
-tags: [git]
->>>>>>> bed7b8dc1855a68fd337e1e0733c839809d00117
 categories:
       - 版本控制
 ---
