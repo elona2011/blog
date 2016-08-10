@@ -13,7 +13,9 @@ tags:
 ```
 $sudo cp /usr/share/rime-data/wubi86.schema.yaml ~/.config/fcitx/rime
 ```
-3 打开 Rime 用户文件夹中的 default.yaml 文件，在 schema_list 尾部添加一行 “- schema: wubi86″，保存退出
+3 打开 Rime 用户文件夹中的 default.yaml 文件
+``~/.config/fcitx/rime/default.yaml``
+在 schema_list 尾部添加一行 “- schema: wubi86″，保存退出
 {% asset_img rime_default_yaml.png default.yaml %}
 4 重新部署启动一下rime. 就可以在方案菜单（按 F4 或 Ctrl+`）中选择五笔86了
 

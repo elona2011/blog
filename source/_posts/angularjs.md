@@ -15,8 +15,10 @@ https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection
 
 Providers are objects that provide (create) instances of services and expose configuration APIs that can be used to control the creation and runtime behavior of a service. 
 
-# Directive
+# $scope.$apply
+[all Controller code should expect to be run within Angular, so it should have no need to call $apply or $digest. Conversely, code that is being trigger directly as a call back to some external event, from the DOM or 3rd party library, should expect that it is never called from within Angular, and so any Angular application code that it calls should first be wrapped in a call to $apply.](https://docs.angularjs.org/error/$rootScope/inprog?p0=$apply)
 
+# Directive
 
 ## ng-app
 

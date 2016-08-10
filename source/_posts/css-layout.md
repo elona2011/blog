@@ -6,45 +6,26 @@ categories:
     - css
 ---
 
+居中
+/* Internet Explorer 10 */
+display:-ms-flexbox;
+-ms-flex-pack:center;
+-ms-flex-align:center;
 
-内外div居中
-.btv_icon_text_outside{
-	height: 120px;
-	width: 150px;
-	float: left;
-}
+/* Firefox */
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
 
-.btv_icon_text_inside{
-	left:30%;
-	top: 20%;
-	height: 90px;
-	width: 90px;
-	float: left;
-	position: relative;
-}
+/* Safari, Opera, and Chrome */
+display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
 
-底部居中
-.btvinfobar{
-	height: 34%;
-    width: 100%;
-    top: 66%;
-    position: absolute;
-}
-
-内外DIV
-.btvinfobar_outside{
-	height: 34%;
-    width: 100%;
-    top: 66%;
-    position: absolute;
-}
-
-.btvinfobar_inside{
-    top: 30%;
-    width: 100%;
-    position: absolute;
-    left: 20%;
-}
+/* W3C */
+display:box;
+box-pack:center;
+box-align:center;
 
 border
 border-style: solid;
@@ -80,4 +61,3 @@ background-repeat: no-repeat;
 css文件里可以引用其它css文件:
 @import url(my.css);
 
-请详细观看盒子模型的立体图片，从第一层到第五层依次为：border、content+padding、background-image、background-color、margin。
