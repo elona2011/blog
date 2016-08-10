@@ -4,11 +4,11 @@ tags:
     - ubuntu
 ---
 
-非常爽，原以为这么流行的游戏肯定不会原生支持Linux，结果居然支持，效果还很好，很流畅。下面说一下安装和设置的方法：
+1122非常爽，原以为这么流行的游戏肯定不会原生支持Linux，结果居然支持，效果还很好，很流畅。下面说一下安装和设置的方法：
 终端下运行：
 ```
-$ wget http://media.steampowered.com/client/installer/steam.deb 
-$ sudo apt-get install gdebi-core 
+$ wget http://media.steampowered.com/client/installer/steam.deb
+$ sudo apt-get install gdebi-core
 $ sudo gdebi steam.deb      #安装steam
 $ sudo apt-get install libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libc6:i386     #安装依赖包
 ```
@@ -26,4 +26,3 @@ DOTA2游戏设置无法调整鼠标移动速度，需要在系统设置里改。
 # 国服设置
 在Dota2游戏属性里添加``-perfectworld``
 {% asset_img 005.png  %}
-
