@@ -4,7 +4,7 @@ tags:
     - ubuntu
 ---
 
-1122非常爽，原以为这么流行的游戏肯定不会原生支持Linux，结果居然支持，效果还很好，很流畅。下面说一下安装和设置的方法：
+1122334455非常爽，原以为这么流行的游戏肯定不会原生支持Linux，结果居然支持，效果还很好，很流畅。下面说一下安装和设置的方法：
 终端下运行：
 ```
 $ wget http://media.steampowered.com/client/installer/steam.deb

@@ -4,6 +4,13 @@ tags:
     - windows
 ---
 
+# PowerShell
+
+http://www.howtogeek.com/50236/customizing-your-powershell-profile/
+如果无法加载文件，
+用管理员执行一次set-executionpolicy remotesigned即可
+
+
 ```
 route delete 0.0.0.0 mask 0.0.0.0 172.18.0.1
 route delete 10.10.10.0

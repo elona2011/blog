@@ -1,6 +1,6 @@
 title: Git & SVN
 date: 2015-03-21 12:31:49
-tags: 
+tags:
     - git
     - svn
 categories:
@@ -14,7 +14,7 @@ https://help.github.com/articles/generating-ssh-keys/
 ```
 git clone <SSH clone URL>
 ```
-<SSH clone URL> 在github相应仓库首页右侧点击SSH clone URL的复制按钮
+``<SSH clone URL>`` 在github相应仓库首页右侧点击SSH clone URL的复制按钮
 
 ## git stage
 同git add，文件快照
@@ -46,6 +46,9 @@ git push origin master
 ``git commit -m 'xxx comment'``
 ``git push``
 
+# Troubleshooting
+更新ssh key，导致无法push
+http://stackoverflow.com/questions/23749886/git-unable-to-resolve-references-when-pushing
+
 # SVN
 http://my.oschina.net/donhui/blog/385452
-

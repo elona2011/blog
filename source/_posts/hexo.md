@@ -1,6 +1,6 @@
 title: 使用hexo布置blog
 date: 2015-01-08 17:53:31
-tags: 
+tags:
     - blog
 ---
 
@@ -61,6 +61,11 @@ deploy:
   repo: git@github.com:elona2011/elona2011.github.io.git
   branch: master
 ```
+
+Troubleshooting:
+更新ssh key，导致无法push
+删除.deploy_git/refs/heads/master，再次deploy就可以成功
+http://stackoverflow.com/questions/23749886/git-unable-to-resolve-references-when-pushing
 
 参考：
 [https://help.github.com/articles/generating-ssh-keys/](https://help.github.com/articles/generating-ssh-keys/)
