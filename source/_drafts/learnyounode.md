@@ -10,3 +10,26 @@ var fs = require('fs')
 console.log(fs.readFileSync(process.argv[2], 'utf8').split('\n').length - 1)
 //console.log(fs.readFileSync(process.argv[2]).toString().split('\n').length - 1)
 ```
+
+异步
+```
+var fs = require('fs')
+
+fs.readFile(process.argv[2], 'utf8', function(err, data) {
+    console.log(data.split('\n').length - 1)
+})
+```
+
+文件过滤
+```
+var fs = require('fs')
+var path = require('path')
+
+fs.readdir(process.argv[2], function(err, data) {
+    data.filter(function(n) {
+        return path.extname(n).slice(1) === process.argv[3]
+    }).forEach(function(n) {
+        console.log(n)
+    })
+})
+```

@@ -38,6 +38,13 @@ Search: <input ng-model="query">
 </li>
 ```
 
+# Custom Directive
+
+在自定义指令中传入回调函数，还可以传参
+```
+<custom-directive callback="callback(data)"></custom-directive>
+```
+
 # Service
 
 $exceptionHandler 可以重写exception catch
