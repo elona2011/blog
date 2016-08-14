@@ -25,5 +25,26 @@ var md5Value = utility.md5(q);
 ```
 
 # AMD(require.js)
+```
+define(['./a','./b'], function (a, b) {
+    //类似于依赖注入
+    a.test();
+    b.test();
+});
+```
 
 # CMD(sea.js)
+```
+define(function (requie, exports, module) {
+    //依赖可以就近书写
+    var a = require('./a');
+    a.test();
+
+    //软依赖
+    if (status) {
+
+        var b = requie('./b');
+        b.test();
+    }
+});
+```
