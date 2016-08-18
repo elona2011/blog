@@ -45,6 +45,9 @@ Search: <input ng-model="query">
 <custom-directive callback="callback(data)"></custom-directive>
 ```
 
+recursion directive
+http://stackoverflow.com/questions/14430655/recursion-in-angular-directives
+
 # Service
 
 $exceptionHandler 可以重写exception catch

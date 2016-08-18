@@ -1,5 +1,5 @@
 
-# CommonJS(node.js)a
+# CommonJS(node.js)
 
 CommonJs 是服务器端模块的规范，Node.js采用了这个规范。
 
