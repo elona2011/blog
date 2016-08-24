@@ -20,7 +20,7 @@ a.bb; //'33'
 typeof可返回6种类型：undefined, boolean, number, string, object, function
 
 基本类型中的假值
-false, 0, "", NaN, null, undefined, 除了这6个值，其它所有值均可隐式转换为true 
+false, 0, "", NaN, null, undefined, 除了这6个值，其它所有值均可隐式转换为true
 
 # 变量
 
@@ -221,7 +221,7 @@ set a(val){this._a_=val*2;}
 };
 my.a=2;
 my.a; //4
- 
+
 所有的普通对象都可以通过对于Object.prototype的委托来访问hasOwnProperty()，但有的对象可能没连接到Object.prototype（通过Object.create(null)来创建），这时访问myObject.hasOwnProperty()会失败。但可以使用Object.prototype.hasOwnProperty.call(myObject, "a")
 
 可枚举相当于“出现在对象属性的遍历中”，即for(var k in myObject){...}遍历可枚举属性
@@ -354,6 +354,20 @@ a(2,3)
 Array [ 1, 2, 3 ] //return
 ```
 
+### slice
+Since Array.slice() does not do deep copying, it is not suitable for multidimensional arrays:
+```
+var a =[[1], [2], [3]];
+var b = a.slice();
+b.shift().shift();
+// a is now [[], [2], [3]]
+
+var a =[[1], [2], [3]];
+var b = $.extend(true, [], a);
+b.shift().shift();
+// a is still [[1], [2], [3]]
+```
+
 ## document
 ### getElementsByTagName(name)
 The special string "*" represents all elements.
@@ -397,4 +411,4 @@ console.timeEnd('a')
 
 # 文章收集
 JS模板
-http://div.io/topic/758 
+http://div.io/topic/758
